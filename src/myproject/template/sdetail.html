@@ -1,0 +1,12 @@
+<{% extends 'base.html' %}
+{% block content %}
+<h>Done!</h>
+
+{% for var in object %}
+<h2>{{var.name}}</h2>
+<button><a class="btn btn-default" href="{% url 'nedit' pk=var.pk %}">Edit</a></button>
+<button><a class="btn btn-default" href="{% url 'ndelete' pk=var.pk %}">Delete</a></button>
+<h3>{{var.rollnum}}</h3>
+<h4>{{var.course}}</h4>
+{% endfor %}
+{% endblock %}

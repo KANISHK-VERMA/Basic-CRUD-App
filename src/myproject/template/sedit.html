@@ -1,0 +1,7 @@
+<div class="main">
+    <form method="post">
+        {% csrf_token %}
+        {{student.as_p}}
+        <button type="submit" value="Update"><a href="{% url 'ndetail' %}">Updateb</a></button>
+    </form>
+</div>

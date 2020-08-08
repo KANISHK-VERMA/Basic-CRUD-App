@@ -1,0 +1,10 @@
+<html>
+<h1>Your Information</h1>
+<form method="POST" class="post-form">
+{% csrf_token %}
+    {{student.as_p}}
+
+
+<button class="btn btn-outline-info" type="submit">Save</button>
+</form>
+</html>
